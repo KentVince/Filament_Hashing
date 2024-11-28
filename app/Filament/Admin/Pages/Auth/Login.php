@@ -210,21 +210,6 @@ class Login extends BaseAuth
     protected function getCredentialsFromFormData(array $data): array
     {
 
-        // $data = $this->form->getState();
-        // $user = User::where('email', $data['email'])->first();
-        // $hashedPassword = $user->password;
-
-        // if (Hash::check($data['password'], $hashedPassword)) {
-        //     // Password is correct
-        //     dd('match: '. $data['password'].' and '. $hashedPassword);
-
-
-
-        // } else {
-        //     // Password is incorrect
-        //     dd('not match: '. $data['password'].' and '. $hashedPassword);
-        // }
-
         return [
             'email' => $data['email'],
             'password' => $data['password'],
